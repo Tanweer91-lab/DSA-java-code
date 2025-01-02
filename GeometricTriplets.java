@@ -14,15 +14,15 @@ public class GeometricTriplets{
         System.out.println();
     }
     static void findGeometricTriplets(int[] arr,int n){
-//        for(int i=0;i<n-2;i++){
-//            for(int j=i+1;j<n-1;j++){
-//                for(int k=j+1;k<n;k++){
-//                    if(arr[j]/arr[i]==arr[k]/arr[j]&&arr[j]%arr[i]==0&&arr[k]%arr[j]==0){
-//                        System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
-//                    }else if(arr[j]%arr[i]==0)
-//                }
-//            }
-//        }
+        for(int i=0;i<n-2;i++){
+            for(int j=i+1;j<n-1;j++){
+                for(int k=j+1;k<n;k++){
+                    if(arr[i]*arr[k]==arr[j]*arr[j]){
+                        System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
+                    }
+                }
+            }
+        }
     }
     public static void main(String[] args) {
         int n=sc.nextInt();
