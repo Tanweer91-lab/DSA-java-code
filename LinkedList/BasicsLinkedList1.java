@@ -7,6 +7,13 @@ public class BasicsLinkedList1 {
             this.data=data;
         }
     }
+    static void insertAtEnd(Node head,int data){
+          Node  temp=new Node(data);
+          while(head.next!=null){
+             head=head.next;
+          }
+          head.next=temp;
+    }
     static void display(Node head){
          while(head!=null){
              System.out.print(head.data+" ");
@@ -74,10 +81,15 @@ public class BasicsLinkedList1 {
 //         displayRecursion(a);
 //        System.out.println();
 //         displayReverse(a);
-        System.out.println(length(a));
-        Node g=new Node(350);
-        f.next=g;
-        System.out.println(length(a));
+//        System.out.println(length(a));
+//        Node g=new Node(350);
+//        f.next=g;
+//        System.out.println(length(a));
+        insertAtEnd(a,8);
+        display(a);
+        System.out.println();
+        insertAtEnd(a,10);
+        display(a);
 
     }
 }
